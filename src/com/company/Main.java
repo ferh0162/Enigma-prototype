@@ -12,6 +12,7 @@ public class Main {
         // Hvis den finder et match så skal den skrive matchets index tal ud
         for (int i = 0;alfabetet.length >= i; i++ ) {
             if (alfabetet[i] == bogstav) {
+                System.out.println(i);
                 return i;
             }
         }
@@ -19,6 +20,9 @@ public class Main {
     }
     public char inttilChar(int index) {
         //Vi skal lave en metode til at finde det næste
+        // Vi skal kunne modtage små bogstaver og laver dem alle til store bogstaver
+        // Vi skal finde en måde at lave char til .toUpperCase
+
         char[] alfabetet = {' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'};
 
         char indexNummer = alfabetet[index];
